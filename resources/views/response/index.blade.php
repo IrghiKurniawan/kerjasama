@@ -20,11 +20,9 @@
                 </form>
 
                 <!-- Form untuk ekspor -->
-                <form method="GET" action="{{ route('report.export') }}"
-                    class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
+                <form method="GET" action="{{ route('report.export') }}" class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
                     <div class="col-span-4">
-                        <label for="province-export" class="block text-sm font-medium text-gray-700">Pilih Provinsi untuk
-                            Export:</label>
+                        <label for="province-export" class="block text-sm font-medium text-gray-700">Pilih Provinsi:</label>
                         <select name="province" id="province-export"
                             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                             <option value="">Semua Provinsi</option>
@@ -33,10 +31,12 @@
                     </div>
                     <div class="col-span-12 mt-3">
                         <button type="submit"
-                            class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                            id="export-button" disabled>Export</button>
+                            class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Export
+                        </button>
                     </div>
                 </form>
+
             </div>
             <div>
                 <div class="overflow-x-auto">
